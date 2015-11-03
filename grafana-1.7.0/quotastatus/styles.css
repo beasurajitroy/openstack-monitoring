@@ -1,0 +1,68 @@
+/* Starter CSS for Flyout Menu */
+#cssmenu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+#cssmenu ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu ul {
+  position: relative;
+  z-index: 597;
+  float: left;
+}
+
+/* Custom Stuff */
+#cssmenu {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+  width: 150px;
+  margin-left:1em
+}
+#cssmenu span,
+#cssmenu a {
+  display: inline-block;
+  font-family: Arial;
+  font-size: 14px;
+  text-decoration: none;
+}
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#cssmenu ul,
+#cssmenu li {
+  width: 100%;
+}
+#cssmenu li {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f4d984), color-stop(1, #eece6b));
+  background-image: -webkit-linear-gradient(top, #f4d984, #eece6b);
+  background-image: -moz-linear-gradient(top, #f4d984, #eece6b);
+  background-image: -ms-linear-gradient(top, #f4d984, #eece6b);
+  background-image: -o-linear-gradient(top, #f4d984, #eece6b);
+  background-image: linear-gradient(#f4d984, #eece6b);
+}
+#cssmenu li:hover {
+  background: #b5e1b8;
+}
+#cssmenu a {
+  color: #097416;
+  line-height: 80%;
+  padding: 11px 18px 11px 28px;
+  width: 244px;
+  font-weight: bold;
+}
+

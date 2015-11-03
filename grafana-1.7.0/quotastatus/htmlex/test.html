@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function myFunction() {
+
+var spawn = require('child_process').spawn;
+var _ = require('underscore'); // for some utility goodness
+var deploySh = spawn('sh', [ 'runruby.sh' ], {
+  cwd: process.env.HOME + '/Monitoring/openstack/grafana-1.7.0/quotastatus/htmlex',
+  env:_.extend(process.env, { PATH: process.env.PATH + ':/usr/local/bin' })
+});	
+
+}
+
+</script>
+</head>
+
+<body>
+<h1 id="demo">Before</h1>
+<button onclick="myFunction()">Click me</button>
+</body>
+</html>
