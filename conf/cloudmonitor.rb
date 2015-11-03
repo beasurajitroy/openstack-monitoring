@@ -20,7 +20,7 @@ def email(subject,message)
 
 emailtime=Time.now.utc.iso8601(3)
 msgstr = <<END_OF_MESSAGE
-From: Your Name <GECTSDIA38@email.wal-mart.com>
+From: Your Name <GECTSDIA38@email.xxxxx.com>
 To: Destination Address <sroy@xxxxxlabs.com>
 Subject: #{subject}
 Date: #{emailtime}
@@ -28,10 +28,10 @@ Date: #{emailtime}
 END_OF_MESSAGE
 
 
-Net::SMTP.start('smtp-gw1.wal-mart.com', 25) do |smtp|
+Net::SMTP.start('smtp-gw1.xxxxx.com', 25) do |smtp|
   smtp.send_message msgstr,
-                    'GECTSDIA38@email.wal-mart.com',
-                    'sroy@xxxxxlabs.com','CloudDevo@email.wal-mart.com'
+                    'GECTSDIA38@email.xxxxx.com',
+                    'sroy@xxxxxlabs.com','CloudDevo@email.xxxxx.com'
   puts "Message Sent"                  
 end
 end
